@@ -1,0 +1,6 @@
+root = false
+
+[*.cs]
+# CA2007: Consider calling ConfigureAwait on the awaited task
+# It is generally appropriate to suppress this warning entirely for projects that represent application code rather than library code
+dotnet_diagnostic.CA2007.severity = warning
